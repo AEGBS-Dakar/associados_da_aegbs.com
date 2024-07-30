@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <img src="images/AEGBS__LOGO.jpg" alt="Logo AEGBS" class="centered-logo">
+            <h2>ASSOCIATION DES ETUDIANTS BISSAU-GUINÉENS AU SÉNÉGAL</h2>
+            <h3>CADASTRO DO MEMBRO</h3>
+            <form id="registrationForm">
+                <fieldset>
+                    <legend>DADOS PESSOAL</legend>
+                    <div class="image-container">
+                        <label for="photo">Photo de l'étudiant :</label>
+                        <input type="file" id="photo" accept="image/*" onchange="loadFile(event)">
+                        <img id="output" src="#" alt="Votre photo" class="profile-photo"/>
+                    </div>
+
+                    <label for="nom">Nome completo :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="sexe">Sexo :</label>
+                    <select id="sexe" name="sexe" required>
+                        <option value="Masculin">Masculin</option>
+                        <option value="Feminin">Feminin</option>
+                    </select>
+
+                    <label for="date_naissance">Data de nascimento :</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required>
+
+                    <label for="fils_de_pere">Filho(a) de (Pai):</label>
+                    <input type="text" id="fils_de_pere" name="fils_de_pere" required>
+
+                    <label for="fils_de_mere">Filho(a) de (Mãe):</label>
+                    <input type="text" id="fils_de_mere" name="fils_de_mere" required>
+
+                    <label for="etat_civil">Estado Civil :</label>
+                    <select id="etat_civil" name="etat_civil" required>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                    </select>
+
+                    <label for="b_i">B.I n° :</label>
+                    <input type="text" id="b_i" name="b_i" required>
+
+                    <label for="local_emissao">Local de emissão :</label>
+                    <input type="text" id="local_emissao" name="local_emissao" required>
+
+                    <label for="date_emissao">Data de emissão :</label>
+                    <input type="date" id="date_emissao" name="date_emissao" required>
+
+                    <label for="region">Região :</label>
+                    <input type="text" id="region" name="region" required>
+
+                    <label for="bairro">Bairro :</label>
+                    <input type="text" id="bairro" name="bairro" required>
+
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="contacts">Contactos :</label>
+                    <input type="text" id="contacts" name="contacts" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>DADOS ACADÊMICOS</legend>
+                    <label for="institution">Instituto de enssino :</label>
+                    <input type="text" id="institution" name="institution" required>
+
+                    <label for="formation">Formação :</label>
+                    <input type="text" id="formation" name="formation" required>
+
+                    <label for="annee">Ano de Formação :</label>
+                    <input type="text" id="annee" name="annee" required>
+                </fieldset>
+
+                <p>
+                    Reconheço ter lido e compreendido os termos de condição de adesão à AEGBS, e comprometo-me a aceitá-los, pelo que confirmo a veracidade dos dados pessoais acima mencionados.
+                </p>
+
+                <div class="signature">
+                    <label for="signature_membro">Assinatura do membro :</label>
+                    <input type="text" id="signature_membro" name="signature_membro">
+
+                    <label for="signature_presidente">O Presidente do AEGBS :</label>
+                    <input type="text" id="signature_presidente" name="signature_presidente">
+                </div>
+
+                <div class="date">
+                    <label for="date">Dakar,</label>
+                    <input type="text" id="date" name="date" placeholder="Jour">
+                    <input type="text" id="month" name="month" placeholder="Mois">
+                    <input type="text" id="year" name="year" placeholder="Année">
+                </div>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
