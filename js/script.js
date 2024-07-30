@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(form);
         const pdfDoc = await generatePDF(formData);
 
-        // Envoi du PDF par Telegram (commenté pour le moment)
-        // await sendToTelegram(pdfDoc);
+        // Envoi du PDF par Telegram
+        await sendToTelegram(pdfDoc);
+
+        alert('Formulaire soumis avec succès !');
+        form.reset();
     });
 
     // Fonction pour générer le PDF
@@ -50,11 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return pdf.output('blob');
     };
 
-    // Fonction pour envoyer le PDF par Telegram (commentée pour le moment)
-    
+    // Fonction pour envoyer le PDF par Telegram
     const sendToTelegram = async (pdfDoc) => {
-        const botToken = 'AAHSW3u5zoLaGLRvUO1hpD_HFc0j3DknOJw';
-        const chatId = '7352462001';
+        const botToken = 'YOUR_TELEGRAM_BOT_TOKEN';
+        const chatId = 'YOUR_CHAT_ID';
 
         const formData = new FormData();
         formData.append('chat_id', chatId);
@@ -76,5 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Erreur lors de l\'envoi du formulaire. Veuillez réessayer.');
         }
     };
-    
 });
