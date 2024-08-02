@@ -75,3 +75,24 @@ input, select, button {
     background-color: #075bf6;
     margin-bottom: 0px;
 }
+
+.date-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-inputs input, .date-inputs select {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    .date-inputs input, .date-inputs select {
+        margin: 0 2px;
+    }
+}
