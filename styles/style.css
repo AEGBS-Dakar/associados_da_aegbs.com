@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sociaux{
+	color: rgb(124, 255, 1);
+}
+.facebook{
+	width: 50px;
+    padding-left: 0px;
+}
+.whatsapp{
+	width: 50px;
+    padding-left: 135px;
+}
+.instagram{
+	width: 50px;
+    padding-left: 180px;
+}
+
+.tet{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fooo{
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    background-color: #075bf6;
+    margin-bottom: 0px;
+}
