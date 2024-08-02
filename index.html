@@ -17,59 +17,119 @@
             <legend>DADOS PESSOAIS</legend>
             <label for="nom">Nome completo:</label>
             <input type="text" id="nom" name="nom" required>
+            
             <label for="sexe">Sexo:</label>
             <select id="sexe" name="sexe" required>
                 <option value="">Selecionar</option>
                 <option value="Homem">Homem</option>
                 <option value="Mulher">Mulher</option>
             </select><br><br>
-            <label for="date_naissance">Data de Nascimento:</label>
-            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+            <!-- Date of Birth Section -->
+            <label for="date_naissance">Data de Nascimento:</label><br>
+            <div class="date-inputs">
+                <input type="text" id="day" name="day" placeholder="Dia" required>
+                <select id="month" name="month" required>
+                    <option value="">Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <input type="text" id="year" name="year" placeholder="Ano" required>
+            </div><br>
+
+
             <label for="fils_de_pere">Filho de (Pai):</label>
             <input type="text" id="fils_de_pere" name="fils_de_pere" required><br><br>
+
             <label for="fils_de_mere">Filho de (Mãe):</label>
             <input type="text" id="fils_de_mere" name="fils_de_mere" required><br><br>
+
             <label for="etat_civil">Estado Civil:</label>
             <select id="etat_civil" name="etat_civil" required>
                 <option value="">Selecionar</option>
                 <option value="Solteiro">Solteiro</option>
                 <option value="Casado">Casado</option>
             </select><br><br>
+
             <label for="b_i">B.I n°:</label>
             <input type="text" id="b_i" name="b_i" required><br><br>
+
             <label for="local_emissao">Local de Emissão:</label>
             <input type="text" id="local_emissao" name="local_emissao" required><br><br>
-            <label for="date_emissao">Data de Emissão:</label>
-            <input type="date" id="date_emissao" name="date_emissao" required><br><br>
+
+            <!-- Data de Emissão Section -->
+            <label for="date_emissao">Data de Emissão:</label><br>
+            <div class="date-inputs">
+                <input type="text" id="emission_day" name="emission_day" placeholder="Dia" required>
+                <select id="emission_month" name="emission_month" required>
+                    <option value="">Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <input type="text" id="emission_year" name="emission_year" placeholder="Ano" required>
+            </div><br>
+
+
             <label for="region">Região(Dakar):</label>
             <input type="text" id="region" name="region" required><br><br>
+
             <label for="bairro">Bairro(Dakar):</label>
             <input type="text" id="bairro" name="bairro" required><br><br>
+
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required><br><br>
+
             <label for="telephone">Telefone(SÉNÉGAL)(+221 ):</label>
             <input type="text" id="telephone" name="telephone" required><br><br>
         </fieldset>
+
         <fieldset>
             <legend>DADOS ACADÊMICOS</legend>
             <label for="institution">Instituto de Ensino:</label>
             <input type="text" id="institution" name="institution" required>
+
             <label for="formation">Formação:</label>
             <input type="text" id="formation" name="formation" required>
+
             <label for="annee">Ano de Formação:</label>
             <input type="text" id="annee" name="annee" required>
         </fieldset>
+
         <h4>
             Reconheço ter lido e compreendido os termos de condição de adesão à AEGBS, e comprometo-me a aceitá-los, pelo que confirmo a veracidade dos dados pessoais acima mencionados.
         </h4>
+
         <label>Li e concordo!
             <input type="checkbox" id="terms" name="terms" required> Aceito os termos e condições
         </label>
         <br><br>
+
         <button type="submit">Inscrever-se</button>
     </form>
+
     <script src="scripts/script.js"></script>
 </body>
+
 <footer>
     <div class="fooo">
         <h1 class="sociaux">Para mais informações:</h1>
@@ -82,7 +142,7 @@
         <a href="https://www.instagram.com/aebgs_/">
             <img class="instagram" src="styles/instagram.png" alt="INSTAGRAM">
         </a>
-    <marquee>&copy; ⭐<strong>Inscrição DO MEMBRO NA AEGBS 2024/2025!</strong></marquee>
+        <marquee>&copy; ⭐<strong>Inscrição DO MEMBRO NA AEGBS 2024/2025!</strong></marquee>
     </div>
 </footer>
 </html>
